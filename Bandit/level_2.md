@@ -1,4 +1,4 @@
-# Bandit Level 2
+# Bandit Level 1->2
 
 **Goal:** The password for the next level is stored in a file called - located in the home directory
 
