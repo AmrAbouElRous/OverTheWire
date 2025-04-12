@@ -44,6 +44,6 @@ ___
 
 ## 📤 Output
 ```bash
-4CKMh1JI91bUIZZPXDqGanal4xvAg0JM 
+4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 ```
 
