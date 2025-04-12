@@ -27,12 +27,6 @@ millionth       dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 ```
 ___
 
-## 💡 Tips
-```bash
-
-```
-___
-
 ## 📤 Output
 ```bash
 dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc 
