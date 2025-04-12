@@ -33,7 +33,6 @@ bandit4@bandit:~/inhere$ cat ./-file00
 # go throug all of them until u gain a human-readable text
 bandit4@bandit:~/inhere$ cat ./-file07
 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
-bandit4@bandit:~/inhere$ 
 
 
 ```
