@@ -29,6 +29,6 @@ ___
 
 ## 📤 Output
 ```bash
-dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc 
+dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 ```
 
