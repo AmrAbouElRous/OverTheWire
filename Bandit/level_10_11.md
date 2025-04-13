@@ -16,13 +16,12 @@ The password for the next level is stored in the file data.txt, which contains b
 ---
 
 ## 🖥️ Commands Used
-
-bandit10@bandit:~$ ls
+```bash
+bandit10@bandit:~$ls
 data.txt
 bandit10@bandit:~$ base64 -d data.txt
 The password is dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
 
-#
 ```
 ___
 
