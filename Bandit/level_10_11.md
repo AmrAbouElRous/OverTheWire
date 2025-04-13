@@ -35,6 +35,6 @@ ___
 
 ## 📤 Output
 ```bash
-dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr 
+dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
 ```
 
