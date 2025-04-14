@@ -26,7 +26,7 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 ___
 
 ## 💡 Tips
-```bash
+
 # Continue this loop:
 
 | **File Output**   | **What to Do**                                          |
@@ -36,8 +36,6 @@ ___
 | **tar archive**   | `tar -xf test` (no renaming needed)                     |
 | **ASCII text**    | `cat test` and find the password inside                 |
 
-
-```
 ___
 
 ## 📤 Output
