@@ -1,25 +1,27 @@
-# Bandit Level 0->1
+# Bandit Level 14 → Level 15
 
 ## 🧠 Goal
 
-put your goal here
+The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
 
 ---
 
 ## 🔐 Credentials
 
-- **Username:** `bandit0`
+- **Username:** `bandit14`
 - **Host:** `bandit.labs.overthewire.org`
 - **Port:** `2220`
-- **Password:** `password gained from the previous level level 0`
+- **Password:** `MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS`
 
 ---
 
 ## 🖥️ Commands Used
 
 ```bash
-# comments
-ssh bandit0@bandit.labs.overthewire.org -p 2220
+bandit14@bandit:~$ echo MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS | nc localhost 30000
+Correct!
+8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+
 
 #
 ```
@@ -27,13 +29,15 @@ ___
 
 ## 💡 Tips
 ```bash
+echo MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS | nc localhost 30000
 
+This opens a TCP connection to port 3000 on localhost.
 
 ```
 ___
 
 ## 📤 Output
 ```bash
-password gained level 1 
+8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
 ```
 
