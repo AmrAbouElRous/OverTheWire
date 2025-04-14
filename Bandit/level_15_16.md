@@ -73,6 +73,7 @@ echo "hello" | nc localhost 30000
 ```
 
 This works only if the service at port 30000 is plain text (no encryption).
+
 🔐 openssl s_client
 
     Used for: Encrypted SSL/TLS connections.
