@@ -36,7 +36,7 @@ ___
 | **tar archive**   | `tar -xf test` (no renaming needed)                     |
 | **ASCII text**    | `cat test` and find the password inside                 |
 
-#Commands you may need to solve this level
+# Commands you may need to solve this level
 
 tar, gzip, bzip2, xxd, mkdir, cp, mv, file
 ___
