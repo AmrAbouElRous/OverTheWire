@@ -27,6 +27,14 @@ ___
 
 ## 💡 Tips
 ```bash
+# Continue this loop:
+
+| **File Output**   | **What to Do**                                          |
+|-------------------|---------------------------------------------------------|
+| **gzip**          | `mv test test.gz && gunzip test.gz`                     |
+| **bzip2**         | `mv test test.bz2 && bunzip2 test.bz2`                  |
+| **tar archive**   | `tar -xf test` (no renaming needed)                     |
+| **ASCII text**    | `cat test` and find the password inside                 |
 
 
 ```
