@@ -75,6 +75,6 @@ ___
 
 ## 📤 Output
 ```bash
-MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS 
+MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
 ```
 
