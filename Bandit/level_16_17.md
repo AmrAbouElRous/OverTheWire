@@ -88,6 +88,39 @@ echo kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx | openssl s_client -connect localhost:3179
 ```
 ___
 
+## 💡 Additional Informations
+
+An RSA key is a type of asymmetric cryptographic key used in secure communication. It is part of the RSA encryption algorithm, which is widely used for things like SSH authentication and SSL/TLS for secure web browsing.
+🔐 RSA Key Basics:
+
+RSA (Rivest-Shamir-Adleman) is an asymmetric encryption algorithm, meaning it uses two keys:
+
+    Public key – Can be shared openly, used for encrypting data.
+
+    Private key – Stays private, used for decrypting data and verifying identity.
+
+🧠 How RSA works:
+
+    When you use SSH with an RSA key, the private key stays on your machine (securely stored).
+
+    The public key is added to the remote server you want to authenticate with (like bandit.labs.overthewire.org).
+
+When you try to connect via SSH:
+
+    The server encrypts a challenge with your public key.
+
+    Your private key is used to decrypt that challenge and prove your identity.
+
+    If the server verifies that you have the correct private key, it allows the connection.
+
+🔑 RSA Key Types:
+
+    Private Key (id_rsa): Kept secret on your machine. Used for signing (e.g., SSH login).
+
+    Public Key (id_rsa.pub): Shared with servers. Used to verify your identity when you log in.
+
+---
+
 ## 📤 Output
 ```bash
 -----BEGIN RSA PRIVATE KEY-----
