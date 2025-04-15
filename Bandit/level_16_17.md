@@ -164,7 +164,7 @@ then
 # Read(r)=2,Write(w)=4,Execut(x)e=1
 #   USER    Group   Others
 #  6[2+4]     0       0
-#   rwx      - - -   - - -
+#   rw-      - - -   - - -
 chmod 600 somefile.key
 ```
 then
