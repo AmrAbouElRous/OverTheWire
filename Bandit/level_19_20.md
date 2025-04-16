@@ -6,7 +6,7 @@ To gain access to the next level, you should use the setuid binary in the homedi
 
 #### Helpful Reading Material
 
-    setuid on Wikipedia
+setuid on Wikipedia
 
 
 ---
