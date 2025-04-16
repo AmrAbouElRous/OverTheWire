@@ -72,6 +72,14 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 ```
 #### Part 2 :
 ```bash
+bandit17@bandit:~$ ls
+passwords.new  passwords.old
+bandit17@bandit:~$ diff passwords.new passwords.old
+42c42
+< x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+---
+> C6XNBdYOkgt5ARXESMKWWOUwBeaIQZ0Y
+
 ```
 ___
 
@@ -84,5 +92,5 @@ ___
 
 ## 📤 Output
 ```bash
-password gained level 1 
+x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO 
 ```
