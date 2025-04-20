@@ -25,7 +25,7 @@ cron, crontab, crontab(5) (use “man 5 crontab” to access this)
 ## 🖥️ Commands Used
 
 ```bash
-bandit22@bandit:~$ cd /etc/cron.d
+bandit22@bandit:~$ cd /etc/cron.d/
 bandit22@bandit:/etc/cron.d$ ls -l
 total 28
 -rw-r--r-- 1 root root 123 Apr 10 14:16 clean_tmp
@@ -47,11 +47,16 @@ mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
 echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
 
 cat /etc/bandit_pass/$myname > /tmp/$mytarget
-bandit22@bandit:/etc/cron.d$ /usr/bin/cronjob_bandit23.sh
-Copying passwordfile /etc/bandit_pass/bandit22 to /tmp/8169b67bd894ddbb4412f91573b38db3
-bandit22@bandit:/etc/cron.d$ cat /tmp/8169b67bd894ddbb4412f91573b38db3
-tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
-
+```
+whoami will give us bandit22 so we canot get the password for bandit 23 directly
+so lets modify it for bandit 23
+```bash
+bandit22@bandit:/etc/cron.d$ myname=bandit23
+mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+bandit22@bandit:/etc/cron.d$ echo $mytarget
+8ca319486bfbbc3663ea0fbe81326349
+cat /tmp/$mytarget
+0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
 
 ```
 ___
@@ -65,6 +70,6 @@ ___
 
 ## 📤 Output
 ```bash
-tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
 ```
 
