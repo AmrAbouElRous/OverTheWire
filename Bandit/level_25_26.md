@@ -46,11 +46,9 @@ exit 0
 ```
 since it doesnot use the default /bin/bash instead using showtext with more
 so connect using the private key and scale window to small so that "more" command work
-type v
-
-:set shell=/bin/bash
-
-:sh
+	type v
+	:set shell=/bin/bash
+	:sh
 
 ```bash
 bandit26@bandit:~$ cat /etc/bandit_pass/bandit26
