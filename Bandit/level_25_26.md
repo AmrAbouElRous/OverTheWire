@@ -45,10 +45,10 @@ exec more ~/text.txt
 exit 0
 ```
 since it doesnot use the default /bin/bash instead using showtext with more
-so connect using the private key and scale window to small so that "more" command work
-	type v
-	:set shell=/bin/bash
-	:sh
+so connect using the private key and scale window to small so that "more" command work <br>
+type v <br>
+:set shell=/bin/bash <br>
+:sh
 
 ```bash
 bandit26@bandit:~$ cat /etc/bandit_pass/bandit26
