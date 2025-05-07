@@ -12,6 +12,7 @@ The goal of this repo is to:
 ## 🕹️ Wargames Covered
 
 - [x] Bandit
+- [x] Natas
 - [ ] Leviathan *(in progress)*
 - [ ] Narnia *(coming soon)*
 - [ ] More to come...
