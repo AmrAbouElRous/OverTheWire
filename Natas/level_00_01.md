@@ -1,4 +1,4 @@
-# Natas Level 1 
+# Natas Level 0 → Level 1 
 
 ## 🧠 Goal
 
@@ -11,7 +11,7 @@ Find password to the next level
 - **Username:** `natas1`  
 - **Host:** `natas1.natas.labs.overthewire.org`   
 - **Port:** `80` (HTTP)  
-- **Password:** `password gained from previous level` 
+- **Password:** `0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq` 
 
 ---
 
