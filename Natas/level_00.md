@@ -1,18 +1,15 @@
-# Natas Level 0
+# Natas Level 0 
 
 ## 🧠 Goal
 
-Natas Level 0
+Find password to the next level
 
-Username: natas0
-Password: natas0
-URL:      http://natas0.natas.labs.overthewire.org
 ---
 
 ## 🔐 Credentials
 
 - **Username:** `natas0`  
-- **Host:** `http://natas0.natas.labs.overthewire.org`   
+- **Host:** `natas0.natas.labs.overthewire.org`   
 - **Port:** `80` (HTTP)  
 - **Password:** `natas0` 
 
@@ -50,8 +47,14 @@ ___
 ## 💡 Tips
 ```bash
 curl -u natas0:natas0 http://natas0.natas.labs.overthewire.org
-
 ```
+Each website is rendered by the web browser based on the code (HTML, CSS, JS) requested by server. It is possible to look at this source code. There are multiple different ways to do this:
+
+    Using a command line tool for web requests (such as Curl or wget)
+    Right-clicking and selecting ‘View Page Source’ (only HTML)
+    Opening the inspector of the developer tools of your chosen browser. (Often done with F12)
+
+The Hypertext Markup Language (HTML) is the bones of every website. It contains the content and structure of a website. The basics of HTML are easy to learn and I would recommend you, to do so for this wargame. (Check out W3Schools) for a quick Tutorial/Overview. While HTML is not a programming language, it does have a comment tag. This allows for the insides of this tag to not be rendered by the browser and will therefore not be seen by users, who do not look at the source code.
 ___
 
 ## 📤 Output
