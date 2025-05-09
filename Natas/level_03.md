@@ -77,8 +77,9 @@ ___
 
 ## 💡 Tips
 ```bash
-
+curl -u natas3:3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH natas3.natas.labs.overthewire.org/robots.txt
 ```
+Today’s internet is indexed by search-engine crawlers, such that Google and Co know what content exists on websites to improve search engine results. The robots.txt file exists on servers to tell these crawlers and other web bots, which part of the website can be visited. It allows defining a user-agent aka for what specific bot the rules should be, and which page of the website the user-agent is not allowed to visit. (Example:)[https://developers.google.com/search/docs/crawling-indexing/robots/create-robots-txt]
 ___
 
 ## 📤 Output
