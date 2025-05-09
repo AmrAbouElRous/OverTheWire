@@ -64,7 +64,8 @@ Disallow: /s3cr3t/
 </body></html>
 ```
 
-!["level 03"](./images/level 03.png)
+!["level 03"](./Natas/images/level 03.png)
+
 
 ```bash
 ┌──(amro㉿amro)-[~]
