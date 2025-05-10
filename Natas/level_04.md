@@ -73,7 +73,8 @@ Right click on the main request then presse edit and resend then add Referer wit
 ![level_04a](./images/level_04a.png)
 
 ---
-
+## Another one
+ you can also use burp suite open its browser and in the target section right click on the GET request and press "send to repeater " and there you modify the Referer value and send it and see the response
 
 ## 💡 Tips
 Theory
