@@ -18,7 +18,8 @@ Find password to the next level
 ## 🖥️ Commands Used
 
 ```bash
-
+┌──(amro㉿amro)-[~]
+└─$ curl -u natas6:0RoJwHdSKWFTYR5WuiAewauSuNaBXned http://natas6.natas.labs.overthewire.org
 ```
 ___
 
