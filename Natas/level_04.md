@@ -76,8 +76,8 @@ Right click on the main request then presse edit and resend then add Referer wit
 ## Another one
  you can also use burp suite open its browser and in the target section right click on the GET request and press "send to repeater " and there you modify the Referer value and send it and see the response
 
-## 💡 Tips
-Theory
+## 💡 Theory
+
 
 The communication between the client (our machine) and the server (that hosts the website) is done by a request-response. We sent a request for a certain page and the server sends the response with the content. Generally, they will follow different protocols and structures, which depend on the service. In this case, it is HTTP (Hypertext Transfer Protocol). The request generally includes the request method (GET, POST,…), the requested URL and the protocol version. However, it can also include additional, potentially needed information, through so-called request headers. There are many such fields, some more common than others. Relevant ones for this challenge are ‘Authorization’, which would include the credentials for the website and ‘Referer’, which is the URL/webpage from which the request is sent. Generally, all this is handled by our browser and we do not have to worry about it. It is however possible to manipulate requests
 ___

