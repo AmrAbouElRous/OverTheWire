@@ -18,8 +18,8 @@ Find password to the next level
 
 ```bash
 ┌──(amro㉿amro)-[~]
-└─$ curl -u natas5:0n35PkggAPm2zbEpOU802c0x0Msn1ToK \
-> http://natas5.natas.labs.overthewire.org     
+└─$ curl -u natas5:0n35PkggAPm2zbEpOU802c0x0Msn1ToK http://natas5.natas.labs.overthewire.org
+     
 ```
 ___
 
