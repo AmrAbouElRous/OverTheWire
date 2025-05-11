@@ -1,4 +1,4 @@
-# Natas Level 1 
+# Natas Level 6 -> 7 
 
 ## 🧠 Goal
 
@@ -18,6 +18,7 @@ Find password to the next level
 ## 🖥️ Commands Used
 
 ```bash
+curl -u natas7:bmg8SvU1LizuWjx3y7xkNERkHxGre0GS natas7.natas.labs.overthewire.org
 
 ```
 ___
