@@ -158,5 +158,5 @@ ___
 
 ## 📤 Output
 ```bash
-password gained level 1
+UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk
 ```
