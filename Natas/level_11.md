@@ -125,10 +125,11 @@ ___
 ## 💡 Theory
 
 
-plain ^ key = encrypted
-palin ^ encrypted = key
+#### plain ^ key = encrypted
 
-modified_plain ^ key = modified_encrypted
+#### palin ^ encrypted = key
+
+#### modified_plain ^ key = modified_encrypted
 
 
 
