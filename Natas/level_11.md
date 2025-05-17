@@ -56,10 +56,11 @@ or
 // Theory:
 // if plain ^ key = encrypted
 // so palin ^ encrypted = key
-
+// notes : encrypted text is cookie ,
+// setcookie("data", base64_encode(xor_encrypt(json_encode($d)))
 $plain=json_encode (array( "showpassword"=>"no", "bgcolor"=>"#ffffff"))     ;echo "$plain\n";
-$cookie ='HmYkBwozJw4WNyAAFyB1VUcqOE1JZjUIBis7ABdmbU1GIjEJAyIxTRg=';
-$decoded = base64_decode($cookie); echo "$decoded\n";
+$encodedCookie ='HmYkBwozJw4WNyAAFyB1VUcqOE1JZjUIBis7ABdmbU1GIjEJAyIxTRg=';
+$cookie = base64_decode($encodedCookie); echo "$cookie\n";
 
 function xor_encrypt($in) {
     $plain=json_encode (array( "showpassword"=>"no", "bgcolor"=>"#ffffff"));
@@ -73,9 +74,10 @@ function xor_encrypt($in) {
 
     return $outText;
 }
-$key =xor_encrypt($decoded) ; echo "$key \n";
+$key =xor_encrypt($cookie) ; echo "$key \n";
 $key ='eDWo';
 
+// key ^ modified_plain = modified cookie
 $modified_plain = json_encode (array( "showpassword"=>"yes", "bgcolor"=>"#ffffff"))     ;echo "$modified_plain\n";
 
 function xor_encrypt_2($in) {
@@ -101,12 +103,35 @@ echo base64_encode($modified_cookie);
 ?>
 
 ```
+try using bash
+```bash
+┌──(amro㉿amro)-[~]
+└─$ curl -u natas11:UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk http://natas11.natas.labs.overthewire.org \
+--cookie "data=HmYkBwozJw4WNyAAFyB1VUc9MhxHaHUNAic4Awo2dVVHZzEJAyIxCUc5" |html2text 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1149  100  1149    0     0   4994      0 --:--:-- --:--:-- --:--:--  4995
+
+****** natas11 ******
+Cookies are protected with XOR encryption
+
+The password for natas12 is yZdkjAYZRd3R7tq7T5kXMjMJlOIkzDeB
+Background color:[#ffffff             ][Set color]
+View sourcecode
+
+```
 ___
 
 ## 💡 Theory
-```bash
 
-```
+
+plain ^ key = encrypted
+palin ^ encrypted = key
+
+modified_plain ^ key = modified_encrypted
+
+
+
 ___
 
 ## 📤 Output
