@@ -1,25 +1,25 @@
-# Leviathan Level 1 
+# Leviathan Level 2 -> 3
 
 ## 🧠 Goal  
 
-Log into Leviathan 1 and find the password for Leviathan 2.  
+Log into Leviathan 2 and find the password for Leviathan 3.  
 
 ---
 
 ## 🔐 Credentials  
 
-- **Username:** `leviathan1`  
+- **Username:** `leviathan2`  
 - **Host:** `leviathan.labs.overthewire.org`  
 - **Port:** `2223` (SSH)  
-- **Password:** `3QJ3TgzHDq`  
+- **Password:** `NsN1HwFoyN`  
 
 ---
 
 ## 🖥️ Commands Used  
 
 ```bash
-# connect to leviathan1
-ssh leviathan1@leviathan.labs.overthewire.org -p 2223
+# connect to leviathan2
+ssh leviathan2@leviathan.labs.overthewire.org -p 2223
 
 
 ```

@@ -1,4 +1,4 @@
-# Leviathan Level 0  
+# Leviathan Level 0  -> 1
 
 ## 🧠 Goal  
 
