@@ -59,7 +59,7 @@ setreuid(12002, 12002) = 0 <br>
 system("/bin/cat /tmp/amro.BWn/test" <no return ...> <br>
 
 listen to me and answer: <br>
-access() checks RUID if returns 0 mean that this ruid (leviathan2) have access setreuid(12002,12002) makes both IDs = leviathan3, so the process runs entirely as leviathan3, then system performs the command cat to print the content of the file but the tricks come here the attacker could insert ; in the name of that file lets say "fake;bash" that has gained access before and since ; is command seprator then cat/tmp/amro.BWN/fake will execute or get error it doesn`t matter,then bash command will execute and since i am leviathan 3 now it will open the bash of leviathan3 then i can traverse to the passowrd file
+access() checks RUID if returns 0 mean that this ruid (leviathan2) have access to read, snprintf is a Program builds the command string and store it into buffer waiting for system to use it later , setreuid(12002,12002) makes both IDs = leviathan3, so the process runs entirely as leviathan3, then system performs the command cat to print the content of the file but the tricks come here the attacker could insert ; in the name of that file lets say "fake;bash" that has gained access before and since ; is command seprator then cat/tmp/amro.BWN/fake will execute or get error it doesn`t matter,then bash command will execute and since i am leviathan 3 now it will open the bash of leviathan3 then i can traverse to the passowrd file
 
 ```bash
 leviathan2@leviathan:~$ touch /tmp/amro.BWn/"fake;bash"
@@ -103,6 +103,22 @@ Key difference from && and ||
 || → run second only if first fails (exit code ≠ 0).
 ```
 
+```bash
+#snprintf builds the command string and store it into a buffer for later use by system
+snprintf(0x7ffd1234, 511, "/bin/cat %s", "/tmp/amro.BWn/test") = 27
+#for some reason the first argument showd the content of the buffer rather than showing the pointer 
+snprintf("/bin/cat /tmp/amro.BWn/test", 511, "/bin/cat %s", "/tmp/amro.BWn/test") = 27
+
+First arg ("/bin/cat /tmp/amro.BWn/test") →
+⚠️ This is confusing because strace is showing you the contents of the buffer after the call, not the real pointer.
+Second arg (511) →
+The size of the buffer (max number of characters to write, including the null terminator).
+Third arg ("/bin/cat %s") →
+The format string. %s is a placeholder that says “insert a string here”
+Fourth arg ("/tmp/amro.BWn/test") →
+This is the string that will replace %s.
+= 27 it means snprintf would (and did) write 27 characters "/bin/cat/tmp/amro.BWn/test " = 27  characters
+```
 ___
 
 ## 📤 Output
