@@ -51,7 +51,8 @@ system("/bin/cat /tmp/amro.BWn/test" <no return ...>
 <... system resumed> )                                            = 0
 +++ exited (status 0) +++
 ```
-access("/tmp/amro.BWn/test", 4) = 0 snprintf("/bin/cat /tmp/amro.BWn/test", 511, "/bin/cat %s", "/tmp/amro.BWn/test") = 27 <br>
+access("/tmp/amro.BWn/test", 4) = 0 <br>
+snprintf("/bin/cat /tmp/amro.BWn/test", 511, "/bin/cat %s", "/tmp/amro.BWn/test") = 27 <br>
 geteuid() = 12002 <br> 
 geteuid() = 12002 <br>
 setreuid(12002, 12002) = 0 <br>
