@@ -32,8 +32,14 @@ spaces in this filename
 
 
 #Show the content of a file with space in its name
-bandit2@bandit:~$ cat 'spaces in this filename'
+bandit2@bandit:~$ cat ./"--spaces in this filename--"
 MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+
+#or
+
+bandit2@bandit:~$ cat ./--spaces\ in\ this\ filename-- 
+MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+
 
 #
 ```
@@ -41,4 +47,11 @@ MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 ```bash
 MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 ```
+## 💡 Tips
+✅ Option 3: Use tab completion
 
+Type:
+
+cat ./--
+
+then press Tab — the shell will fill in the rest safely for you

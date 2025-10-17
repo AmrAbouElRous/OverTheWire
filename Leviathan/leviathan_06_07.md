@@ -142,6 +142,22 @@ ___
 
 ## 💡 Theory
 ```
+
+gdb -q ./leviathan6
+(gdb) set disassembly-flavor intel 
+
+fors static debugging use:
+(gdb) disassemble main
+for dynamic debugging use :
+(gdb) layout asm
+(gdb) break main
+(gdb) run
+(gdb) stepi
+
+(gdb) info registers eax ebx ecx edx
+(gdb) x/x then memory address or x/s or x/d
+
+
 watch assembly with nasm x86 32bit 
 YOUTUBE:olivestem
 ```
